@@ -16,7 +16,7 @@ export default function AddNoteScreen() {
     }
 
     try {
-      const response = await axios.post("http://192.168.2.4:8000/notes/", {
+      const response = await axios.post("http://ip_address/notes/", {
         title,
         content,
         tags
