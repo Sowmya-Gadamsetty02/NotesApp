@@ -16,7 +16,7 @@ export default function NotesScreen() {
   const router = useRouter();
 
   useEffect(()=>{
-    axios.get("http://192.168.2.4:8000/notes/")
+    axios.get("http://ip_address/notes/")
     .then(response => {
       setNotes(response.data)
       setLoading(false)
@@ -44,7 +44,7 @@ export default function NotesScreen() {
           text: "Delete",
           style: "destructive",
           onPress: () => {
-            axios.delete(`http://192.168.2.4:8000/notes/${id}/`)
+            axios.delete(`http://ip_address/notes/${id}/`)
               .then(() => {
                 setNotes(prevNotes => prevNotes.filter(note => note.id !== id));
               })
