@@ -1,0 +1,117 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f4f8;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  }
+  
+  h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 24px;
+  }
+  
+  form {
+    margin-bottom: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  input[type="text"],
+  textarea {
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    background-color: #fafafa;
+  }
+  
+  textarea {
+    resize: vertical;
+    min-height: 80px;
+  }
+  
+  button {
+    padding: 10px 16px;
+    border: none;
+    font-weight: 600;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button[type="submit"] {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  
+  .note {
+    background-color: #fefefe;
+    border: 1px solid #ddd;
+    border-left: 6px solid #007bff;
+    padding: 16px;
+    margin-bottom: 14px;
+    border-radius: 8px;
+  }
+  
+  .note strong {
+    font-size: 18px;
+    color: #333;
+    display: block;
+    margin-bottom: 8px;
+  }
+  
+  .note .tags {
+    font-style: italic;
+    color: #555;
+    margin-top: 6px;
+  }
+  
+  .note .buttons {
+    margin-top: 12px;
+  }
+  
+  .note .buttons button {
+    margin-right: 10px;
+  }
+  
+  button.edit {
+    background-color: #17a2b8;
+    color: white;
+  }
+  
+  button.edit:hover {
+    background-color: #117a8b;
+  }
+  
+  button.delete {
+    background-color: #dc3545;
+    color: white;
+  }
+  
+  button.delete:hover {
+    background-color: #a71d2a;
+  }
+  
+  .edit-form {
+    margin-top: 40px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #fff8e1;
+    border-radius: 8px;
+  }
+  
