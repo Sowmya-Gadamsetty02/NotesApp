@@ -12,7 +12,7 @@ export default function EditNoteScreen(){
     const [tags, setTags] = useState('')
 
     useEffect(()=> {
-        axios.get(`http://192.168.2.4:8000/notes/${id}/`)
+        axios.get(`http://ip_address/notes/${id}/`)
         .then(response =>{
             const note = response.data
             setTitle(note.title)
@@ -26,7 +26,7 @@ export default function EditNoteScreen(){
     },[id])
 
     const handleUpdate = () => {
-        axios.put(`http://192.168.2.4:8000/notes/${id}/`, {
+        axios.put(`http://ip_address/notes/${id}/`, {
           title,
           content,
           tags,
